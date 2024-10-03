@@ -1,4 +1,5 @@
 const URL = "https://teachablemachine.withgoogle.com/models/g0WhTEM-Q/";
+//const URL = "https://teachablemachine.withgoogle.com/models/96Tk9csO0/";
 
 let model, webcam, labelContainer, maxPredictions;
 
@@ -37,9 +38,11 @@ async function loop() {
     if (prediction[maxProbabilityIndex].probability > 0.8) {
         move(prediction, maxProbabilityIndex);
     }
-    console.log(prediction);
+    //console.log(prediction);
     //    const classPrediction =
     //        prediction[i].className + ": " + prediction[i].probability.toFixed(2);
+    // const { pose, posenetOutput } = await model.estimatePose(webcam.canvas);
+    // drawPose(pose);
     window.requestAnimationFrame(loop);
 }
 
@@ -81,3 +84,16 @@ async function loop() {
             redSquare.style.top = `${y}%`;
         }
     }
+    // async function drawPose(pose) {
+    //     const canvas = document.getElementById("canvas");
+    //     const ctx = canvas.getContext("2d");
+    //     if (webcam.canvas) {
+    //         ctx.drawImage(webcam.canvas, 0, 0);
+    //         // draw the keypoints and skeleton
+    //         if (pose) {
+    //             const minPartConfidence = 0.5;
+    //             tmPose.drawKeypoints(pose.keypoints, minPartConfidence, ctx);
+    //             tmPose.drawSkeleton(pose.keypoints, minPartConfidence, ctx);
+    //         }
+    //     }
+    // }
