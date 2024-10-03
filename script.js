@@ -5,8 +5,8 @@ let model, webcam, labelContainer, maxPredictions;
 const redSquare = document.querySelector('.red-square');
 let x = 50;
 let y = 50;
-let speedX = 0.1;
-let speedY = 0.1;
+let speedX = 0.3;
+let speedY = 0.3;
 
 async function init() {
     const modelURL = URL + "model.json";
@@ -33,13 +33,13 @@ async function loop() {
     webcam.update(); // update the webcam frame
     //await predict();
     const prediction = await model.predict(webcam.canvas);
-    for (let i = 0; i < maxPredictions; i++) {
-        if (prediction[i].probability>0.9) {
-            move(prediction,i);
-        }
+    const maxProbabilityIndex = prediction.findIndex((item) => item.probability === Math.max(...prediction.map((item) => item.probability)));
+    if (prediction[maxProbabilityIndex].probability > 0.8) {
+        move(prediction, maxProbabilityIndex);
+    }
+    console.log(prediction);
     //    const classPrediction =
     //        prediction[i].className + ": " + prediction[i].probability.toFixed(2);
-    }
     window.requestAnimationFrame(loop);
 }
 
@@ -72,7 +72,7 @@ async function loop() {
                 y = 0;
             }
             redSquare.style.top = `${y}%`;
-        } else if (prediction[i].className == 'tdown') {
+        } else if (prediction[i].className == 'tdon') {
             // Move down
             y += speedY;
             if (y > 300) {
