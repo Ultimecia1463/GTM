@@ -13,6 +13,7 @@ body, html {
     right: 400px;
     border-radius: 6px;
     background-color: white;
+    overflow: hidden;
 }
 .red-square {
     width: 200px;
@@ -23,6 +24,7 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
 }
 #webcam-container {
     position: absolute;
