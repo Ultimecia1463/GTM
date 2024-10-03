@@ -1,5 +1,5 @@
-//const URL = "https://teachablemachine.withgoogle.com/models/g0WhTEM-Q/";
-const URL = "https://teachablemachine.withgoogle.com/models/96Tk9csO0/";
+const URL = "https://teachablemachine.withgoogle.com/models/g0WhTEM-Q/";
+//const URL = "https://teachablemachine.withgoogle.com/models/96Tk9csO0/";
 
 let model, webcam, labelContainer, maxPredictions;
 
