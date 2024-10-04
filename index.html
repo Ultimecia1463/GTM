@@ -11,7 +11,10 @@
     <div class="container">
         <div class="red-square"></div>
     </div>
-    <div id="webcam-container"></div>
+    <div id="webcam-container">
+      <canvas id="canvas"></canvas>
+
+    </div>
     <div id="instructions">
         <h2>Project Instructions:</h2>
         <p>This project uses machine learning to detect hand gestures and move a red square accordingly.</p>
@@ -24,7 +27,7 @@
       </div>
     <button type="button" onclick="init()">Start</button>
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/pose@0.8/dist/teachablemachine-pose.min.js"></script>
 </body>
 </html>
