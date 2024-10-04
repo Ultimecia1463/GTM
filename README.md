@@ -39,13 +39,10 @@ No additional installation steps are needed, as the project uses a CDN for Tenso
 - Ensure you allow access to the webcam when prompted.
 - Use hand gestures (fist, palm, thumb up, thumb down) to move the red square on the screen.
 
-## Project Preview
-![Gesture Detection Preview](https://jesturedetection.netlify.app/screenshot.png) <!-- Replace with actual screenshot or preview link if available -->
+<!-- ## Project Preview
+![Gesture Detection Preview](https://jesturedetection.netlify.app/screenshot.png) Replace with actual screenshot or preview link if available -->
 
 ## Future Enhancements
 - Add more gestures for additional functionality.
 - Improve gesture recognition accuracy.
 - Add sound or other feedback mechanisms for detected gestures.
-
-## License
-This project is licensed under the MIT License.
