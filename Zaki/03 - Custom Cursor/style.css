@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+.cursor{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-color: white;
+    mix-blend-mode: difference;
+    transition: all linear 0.01s;
+    border-radius: 50%;
+}
+h1{
+    font-size: 15vw;
+    font-weight: 950;
+}
