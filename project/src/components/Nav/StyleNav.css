@@ -1,0 +1,13 @@
+.navbar {
+  /* background: rgba(255, 255, 255, 0.349); */
+  background: transparent;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(189, 189, 189, 0.429);
+  backdrop-filter: blur(10px);
+  /* position: fixed; */
+  z-index: 99;
+  width: 100%;
+}
