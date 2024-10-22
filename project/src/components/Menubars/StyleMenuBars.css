@@ -1,0 +1,28 @@
+.dots {
+  height: 27.5px;
+  width: 50px;
+  padding: 6px 0px 0px 0px;
+  border-radius: 3px;
+  z-index: 11;
+}
+
+.dot1,
+.dot2,
+.dot3 {
+  background-color: black;
+  margin: 3px auto;
+  height: 0.14em;
+  width: 23px;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.cross1 {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+.cross2 {
+  display: none;
+}
+.cross3 {
+  transform: rotate(-45deg);
+}
