@@ -89,3 +89,32 @@
                 }
             }
         }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Create a button to toggle dark mode
+            const darkModeToggle = document.createElement('button');
+            darkModeToggle.innerText = 'Toggle Dark Mode';
+            darkModeToggle.style.position = 'absolute';
+            darkModeToggle.style.bottom = '20px';
+            darkModeToggle.style.left = '20px';
+            darkModeToggle.style.padding = '10px';
+            darkModeToggle.style.backgroundColor = '#4CAF50';
+            darkModeToggle.style.color = 'white';
+            darkModeToggle.style.border = 'none';
+            darkModeToggle.style.borderRadius = '5px';
+            darkModeToggle.style.cursor = 'pointer';
+        
+            // Append the button to the body
+            document.body.appendChild(darkModeToggle);
+        
+            // Toggle dark mode when the button is clicked
+            darkModeToggle.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                document.querySelector('.container').classList.toggle('dark-mode');
+                document.querySelector('.red-square').classList.toggle('dark-mode');
+                document.querySelector('button').classList.toggle('dark-mode');
+                document.querySelector('#webcam-container').classList.toggle('dark-mode');
+                document.querySelector('#instructions').classList.toggle('dark-mode');
+            });
+        });
+            
