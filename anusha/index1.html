@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter | Tivotal</title>
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!--css file-->
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>Currency Converter</header>
+      <form action="#">
+        <div class="amount">
+          <p>Enter Amount</p>
+          <input type="text" value="1" />
+        </div>
+        <div class="drop-list">
+          <div class="from">
+            <p>From</p>
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/us.png" alt="" />
+              <select name="" id="">
+                <!--options will be added using JS-->
+              </select>
+            </div>
+          </div>
+          <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+          <div class="to">
+            <p>To</p>
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/in.png" alt="" />
+              <select name="" id="">
+                <!--options will be added using JS-->
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="exchange_rate">Getting exchange rate...</div>
+        <button>Get Exchange Rate</button>
+      </form>
+    </div>
+
+    <script src="country-list.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
